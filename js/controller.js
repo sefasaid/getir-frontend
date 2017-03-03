@@ -22,6 +22,12 @@ angular.module('getir-frontend', ['getir-services','daterangepicker'])
                 'Son 7 Gün': [moment().subtract(6, 'days'), moment()],
                 'Son 30 Gün': [moment().subtract(29, 'days'), moment()]
             }
+        }
+        $scope.params = {};
 
+        $scope.getData = function () {
+            $scope.params.startDate = moment($scope.date.startDate).format('YYYY-MM-DD');
+            $scope.params.endDate = moment($scope.date.startDate).format('YYYY-MM-DD');
+            
         }
     });
