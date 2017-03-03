@@ -16,7 +16,7 @@ angular.module('getir-frontend', ['getir-services','daterangepicker'])
                 format: "D-MMMM-YY", //will give you 6-January-17
 
                 cancelLabel: 'İptal',
-                customRangeLabel: 'Özel Alan'
+                customRangeLabel: 'Özel Aralık'
             },
             ranges: {
                 'Son 7 Gün': [moment().subtract(6, 'days'), moment()],
