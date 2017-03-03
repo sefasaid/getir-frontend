@@ -1,0 +1,9 @@
+{
+  "name": "getir-frontend",
+  "version": "0.0.1",
+  "main": "web.js",
+  "dependencies": {
+    "express": "~4.15.0",
+    "gzippo" : "0.1.7"
+  }
+}
