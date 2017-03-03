@@ -36,31 +36,21 @@
 
 
 <div class="container">
-    <h2>Striped Rows</h2>
-    <p>The .table-striped class adds zebra-stripes to a table:</p>
+    <h2>Records</h2>
+    <p ng-if="error">{{ error }}</p>
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
+            <th>key</th>
+            <th>value</th>
+            <th>createdAt</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
+        <tr ng-repeat="record in records">
+            <td>{{ record.key }}</td>
+            <td>{{ record.value }}</td>
+            <td>{{ record.createdAt }}</td>
         </tr>
         </tbody>
     </table>

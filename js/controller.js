@@ -29,9 +29,11 @@ angular.module('getir-frontend', ['getir-services','daterangepicker'])
             $scope.params.startDate = moment($scope.date.startDate).format('YYYY-MM-DD');
             $scope.params.endDate = moment($scope.date.startDate).format('YYYY-MM-DD');
             getRecords.fetch($scope.params).then(function (data) {
-                console.log(data);
+                $scope.records = data.data.records;
             },function (err) {
-                console.log(err);
+                $scope.error = err.data;
             })
-        }
+        };
+
+        $scope.records = {};
     });
