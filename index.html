@@ -17,15 +17,21 @@
     <title>Title</title>
 </head>
 <body ng-controller="MyController">
-<form>
+<form class="form-horizontal">
 
     <div class="form-group">
-        <label for="date">Tarih Aralığı</label>
-        <input id="date" date-range-picker class="form-control date-picker" type="text" ng-model="date"
+        <label for="date" class="control-label col-sm-2">Tarih Aralığı</label>
+        <div class="col-sm-9">
+            <input id="date" date-range-picker class="form-control date-picker" type="text" ng-model="date"
                options="options"/>
+        </div>
     </div>
 
-    <button type="submit" class="btn btn-default">Gönder</button>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Gönder</button>
+        </div>
+    </div>
 </form>
 </body>
 </html>
