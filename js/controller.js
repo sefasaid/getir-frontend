@@ -39,6 +39,7 @@ angular.module('getir-frontend', ['getir-services','daterangepicker'])
     }).
     config(function ($httpProvider) {
         $httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+        $httpProvider.defaults.headers.post["Access-Control-Allow-Origin"] = '*';
         $httpProvider.defaults.headers.post["Access-Control-Allow-Headers"] = 'X-Requested-With';
         $httpProvider.defaults.headers.post['Access-Control-Allow-Methods']= 'POST';
     })
