@@ -13,7 +13,7 @@ angular.module('getir-frontend', ['getir-services','daterangepicker'])
             locale: {
                 applyLabel: "Onayla",
 
-                format: "D-MMMM-YY", //will give you 6-January-17
+                format: "YYYY-MM-DD", //will give you 2017-01-06
 
                 cancelLabel: 'İptal',
                 customRangeLabel: 'Özel Aralık'
