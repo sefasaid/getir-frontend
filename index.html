@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"  ng-app="getir-frontend">
 <head>
-    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <script src="js/controller.js"></script>
     <script src="js/services.js"></script>
 
@@ -9,6 +15,9 @@
     <title>Title</title>
 </head>
 <body ng-controller="MyController">
+<form>
+    <input date-range-picker class="form-control date-picker" type="text" ng-model="date" options="options"/>
 
+</form>
 </body>
 </html>
